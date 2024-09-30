@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Benefícios</title>
+</head>
+<body>
+    <h1>Lista de Benefícios</h1>
+    <ul>
+        {% for benefit in benefits %}
+            <li>{{ benefit[1] }} - {{ benefit[2] }} - Critérios: {{ benefit[3] }} - Valor: R$ {{ benefit[4] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Voltar</a>
+</body>
+</html>
