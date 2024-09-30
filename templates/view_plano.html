@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Planos de Assistência</title>
+</head>
+<body>
+    <h1>Lista de Planos de Assistência</h1>
+    <ul>
+        {% for plan in plans %}
+            <li>{{ plan[1] }} - {{ plan[2] }} - R$ {{ plan[3] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Voltar</a>
+</body>
+</html>
